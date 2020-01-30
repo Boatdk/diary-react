@@ -1,12 +1,12 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 function Content() {
-
-  const [message, setState] = useState('Thank for like')
   
-  const alertFunc = () => {
-    alert(message)
+  const alertFunc = (e) => {
+    e.preventDefault();
+    alert('Thank for like')
   }
+
   return (
     <div>
       <div className="top-space border-black p-3">
@@ -37,13 +37,10 @@ function Content() {
           </div>
 
           <div className="m-5 text-center">
-            Life style <button class="btn btn-danger btn-sm" onclick="imgOpen()">คลิก</button>
+            Facebook <a class="btn btn-danger btn-sm" href="https://www.facebook.com">คลิก</a> Instagram <a class="btn btn-danger btn-sm" href="https://www.instagram.com">คลิก</a>
           </div>
-          <div className="mt-2" id="img-coffee">
-            <center><img src="coffee.jpg" alt="Smiley face" height="50%" width="50%" /></center>
-          </div>
-          <div className="m-5 text-center">
-              Like for me <button  onClick={alertFunc()} class="btn btn-sm btn-primary">Like <i className="fa fa-thumbs-up"></i></button>
+          <div className="m-3 text-center">
+              Like for me <button  onClick={alertFunc} class="btn btn-sm btn-primary">Like <i className="fa fa-thumbs-up"></i></button>
             </div>
       </div>
     </div>
