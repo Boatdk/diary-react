@@ -9,7 +9,7 @@ function Content() {
 
   return (
     <div>
-      <div className="top-space border-black p-3">
+      <div className="top-space border-black p-3 mb-3">
           <p><strong>อังคาร 21 / 01 / 2020</strong></p>
           <div className="ml-3">
               <p> เสียงนาฬิกาดัง ปลุกให้ตื่นตอน 9 โมงเช้า ฉันตื่นขึ้นมาพร้อมอาการงัวเงีย เพราะเมื่อคืนนอนดึกมาก 
@@ -37,7 +37,7 @@ function Content() {
           </div>
 
           <div className="m-5 text-center">
-            Facebook <a class="btn btn-danger btn-sm" href="https://www.facebook.com">คลิก</a> Instagram <a class="btn btn-danger btn-sm" href="https://www.instagram.com">คลิก</a>
+            Facebook <a class="btn btn-danger btn-sm" href="https://www.facebook.com" target="_blank">คลิก</a> Instagram <a class="btn btn-danger btn-sm" href="https://www.instagram.com" target="_blank">คลิก</a>
           </div>
           <div className="m-3 text-center">
               Like for me <button  onClick={alertFunc} class="btn btn-sm btn-primary">Like <i className="fa fa-thumbs-up"></i></button>

@@ -1,22 +1,18 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Content from './components/Content'
 import Header from './components/Header'
-import Footer from './components/Footer'
 import './index.css';
-import './App.css';
+import axios from 'axios'
 
 function App() {
 
   return (
-    <div className="bg-pink-pastel">
-      <div className="container">
-        <div className="text-center mt-3">
+      <div className="container mt-3">
+        <div className="text-center">
           <Header />
         </div>
         <Content />
-        <Footer />
       </div>
-    </div>
   );
 }
 
