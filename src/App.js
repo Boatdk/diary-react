@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Content from './components/Content'
 import Header from './components/Header'
 import './index.css';
-import axios from 'axios'
 
 function App() {
 
